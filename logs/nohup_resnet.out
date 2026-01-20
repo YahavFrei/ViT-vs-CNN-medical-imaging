@@ -1,0 +1,314 @@
+nohup: ignoring input
+Starting Optuna Hyperparameter Search for Model: resnet50
+Configuration: 30 Trials, 4 Epochs per Trial
+[I 2026-01-19 22:07:48,065] A new study created in memory with name: no-name-705061cb-0233-4aa1-b236-a7f83ff6ef6c
+
+--- Trial 0 for resnet50 ---
+Hyperparameters: LR=0.000180 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 0 Finished. Final Validation Accuracy: 0.9175
+[I 2026-01-19 22:09:51,764] Trial 0 finished with value: 0.9174664107485605 and parameters: {'lr': 0.00018032294129979114, 'batch_size': 16}. Best is trial 0 with value: 0.9174664107485605.
+
+--- Trial 1 for resnet50 ---
+Hyperparameters: LR=0.000116 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 1 Finished. Final Validation Accuracy: 0.9443
+[I 2026-01-19 22:11:47,750] Trial 1 finished with value: 0.944337811900192 and parameters: {'lr': 0.00011616658700153509, 'batch_size': 32}. Best is trial 1 with value: 0.944337811900192.
+
+--- Trial 2 for resnet50 ---
+Hyperparameters: LR=0.000044 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 2 Finished. Final Validation Accuracy: 0.9328
+[I 2026-01-19 22:13:44,570] Trial 2 finished with value: 0.9328214971209213 and parameters: {'lr': 4.423698996798319e-05, 'batch_size': 32}. Best is trial 1 with value: 0.944337811900192.
+
+--- Trial 3 for resnet50 ---
+Hyperparameters: LR=0.000011 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 3 Finished. Final Validation Accuracy: 0.7831
+[I 2026-01-19 22:15:45,525] Trial 3 finished with value: 0.783109404990403 and parameters: {'lr': 1.131763743745957e-05, 'batch_size': 32}. Best is trial 1 with value: 0.944337811900192.
+
+--- Trial 4 for resnet50 ---
+Hyperparameters: LR=0.000333 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 4 Finished. Final Validation Accuracy: 0.9443
+[I 2026-01-19 22:17:43,529] Trial 4 finished with value: 0.944337811900192 and parameters: {'lr': 0.0003326361060839718, 'batch_size': 16}. Best is trial 1 with value: 0.944337811900192.
+
+--- Trial 5 for resnet50 ---
+Hyperparameters: LR=0.000043 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 5 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:18:12,685] Trial 5 pruned. 
+
+--- Trial 6 for resnet50 ---
+Hyperparameters: LR=0.000033 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 6 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:18:43,373] Trial 6 pruned. 
+
+--- Trial 7 for resnet50 ---
+Hyperparameters: LR=0.000553 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 7 Finished. Final Validation Accuracy: 0.9155
+[I 2026-01-19 22:20:42,634] Trial 7 finished with value: 0.9155470249520153 and parameters: {'lr': 0.0005526015005275671, 'batch_size': 16}. Best is trial 1 with value: 0.944337811900192.
+
+--- Trial 8 for resnet50 ---
+Hyperparameters: LR=0.000022 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 8 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:21:12,766] Trial 8 pruned. 
+
+--- Trial 9 for resnet50 ---
+Hyperparameters: LR=0.000091 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 9 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:22:12,170] Trial 9 pruned. 
+
+--- Trial 10 for resnet50 ---
+Hyperparameters: LR=0.000129 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 10 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:23:07,966] Trial 10 pruned. 
+
+--- Trial 11 for resnet50 ---
+Hyperparameters: LR=0.000503 | Batch_Size=32
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 11 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:24:04,204] Trial 11 pruned. 
+
+--- Trial 12 for resnet50 ---
+Hyperparameters: LR=0.000271 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 12 Finished. Final Validation Accuracy: 0.9520
+[I 2026-01-19 22:26:04,762] Trial 12 finished with value: 0.9520153550863724 and parameters: {'lr': 0.00027101806039717846, 'batch_size': 16}. Best is trial 12 with value: 0.9520153550863724.
+
+--- Trial 13 for resnet50 ---
+Hyperparameters: LR=0.000929 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 13 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:26:33,744] Trial 13 pruned. 
+
+--- Trial 14 for resnet50 ---
+Hyperparameters: LR=0.000227 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 14 Finished. Final Validation Accuracy: 0.9578
+[I 2026-01-19 22:28:35,580] Trial 14 finished with value: 0.9577735124760077 and parameters: {'lr': 0.0002265237783549221, 'batch_size': 16}. Best is trial 14 with value: 0.9577735124760077.
+
+--- Trial 15 for resnet50 ---
+Hyperparameters: LR=0.000260 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 15 Finished. Final Validation Accuracy: 0.9693
+[I 2026-01-19 22:30:37,830] Trial 15 finished with value: 0.9692898272552783 and parameters: {'lr': 0.00026027353073795645, 'batch_size': 16}. Best is trial 15 with value: 0.9692898272552783.
+
+--- Trial 16 for resnet50 ---
+Hyperparameters: LR=0.000241 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 16 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:31:09,405] Trial 16 pruned. 
+
+--- Trial 17 for resnet50 ---
+Hyperparameters: LR=0.000081 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 17 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:31:41,017] Trial 17 pruned. 
+
+--- Trial 18 for resnet50 ---
+Hyperparameters: LR=0.000454 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 18 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:32:12,637] Trial 18 pruned. 
+
+--- Trial 19 for resnet50 ---
+Hyperparameters: LR=0.000981 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 19 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:32:44,464] Trial 19 pruned. 
+
+--- Trial 20 for resnet50 ---
+Hyperparameters: LR=0.000162 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 20 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:33:16,132] Trial 20 pruned. 
+
+--- Trial 21 for resnet50 ---
+Hyperparameters: LR=0.000246 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 21 Finished. Final Validation Accuracy: 0.9136
+[I 2026-01-19 22:35:20,214] Trial 21 finished with value: 0.9136276391554703 and parameters: {'lr': 0.0002458063229300941, 'batch_size': 16}. Best is trial 15 with value: 0.9692898272552783.
+
+--- Trial 22 for resnet50 ---
+Hyperparameters: LR=0.000311 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 22 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:35:51,747] Trial 22 pruned. 
+
+--- Trial 23 for resnet50 ---
+Hyperparameters: LR=0.000189 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 23 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:36:23,404] Trial 23 pruned. 
+
+--- Trial 24 for resnet50 ---
+Hyperparameters: LR=0.000359 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 24 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:36:55,038] Trial 24 pruned. 
+
+--- Trial 25 for resnet50 ---
+Hyperparameters: LR=0.000762 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 25 Finished. Final Validation Accuracy: 0.9616
+[I 2026-01-19 22:38:59,176] Trial 25 finished with value: 0.9616122840690979 and parameters: {'lr': 0.0007624444419257695, 'batch_size': 16}. Best is trial 15 with value: 0.9692898272552783.
+
+--- Trial 26 for resnet50 ---
+Hyperparameters: LR=0.000661 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 26 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:39:31,155] Trial 26 pruned. 
+
+--- Trial 27 for resnet50 ---
+Hyperparameters: LR=0.000724 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 27 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:40:03,034] Trial 27 pruned. 
+
+--- Trial 28 for resnet50 ---
+Hyperparameters: LR=0.000439 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 28 Finished. Final Validation Accuracy: 0.9578
+[I 2026-01-19 22:42:09,101] Trial 28 finished with value: 0.9577735124760077 and parameters: {'lr': 0.00043945490914813057, 'batch_size': 16}. Best is trial 15 with value: 0.9692898272552783.
+
+--- Trial 29 for resnet50 ---
+Hyperparameters: LR=0.000064 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 29 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:42:41,137] Trial 29 pruned. 
+========================================
+OPTIMIZATION COMPLETE FOR resnet50
+========================================
+Best Accuracy Achieved: 0.9693
+Best Hyperparameters Found:
+  - lr: 0.00026027353073795645
+  - batch_size: 16
+Full log has been saved to: optuna_log_resnet50_20260119_220748.txt
+========================================

@@ -1,0 +1,94 @@
+2026-01-18 22:00:54,646 - Starting Optuna Hyperparameter Search...
+2026-01-18 22:00:54,646 - Mode: FULL OPTIMIZATION
+2026-01-18 22:00:54,646 - Trials: 20 | Epochs per trial: 4
+2026-01-18 22:00:54,647 - 
+--- Trial 0 ---
+2026-01-18 22:00:54,647 - Testing: Model=densenet121 | LR=0.000398 | Batch=16
+2026-01-18 22:03:35,109 - Trial 0 Finished. Validation Accuracy: 1.0000
+2026-01-18 22:03:35,114 - 
+--- Trial 1 ---
+2026-01-18 22:03:35,114 - Testing: Model=resnet50 | LR=0.000523 | Batch=32
+2026-01-18 22:05:40,297 - Trial 1 Finished. Validation Accuracy: 1.0000
+2026-01-18 22:05:40,300 - 
+--- Trial 2 ---
+2026-01-18 22:05:40,300 - Testing: Model=resnet50 | LR=0.000150 | Batch=32
+2026-01-18 22:07:46,908 - Trial 2 Finished. Validation Accuracy: 1.0000
+2026-01-18 22:07:46,911 - 
+--- Trial 3 ---
+2026-01-18 22:07:46,911 - Testing: Model=resnet50 | LR=0.000671 | Batch=32
+2026-01-18 22:09:54,766 - Trial 3 Finished. Validation Accuracy: 1.0000
+2026-01-18 22:09:54,769 - 
+--- Trial 4 ---
+2026-01-18 22:09:54,769 - Testing: Model=resnet50 | LR=0.000049 | Batch=16
+2026-01-18 22:12:11,227 - Trial 4 Finished. Validation Accuracy: 0.8750
+2026-01-18 22:12:11,232 - 
+--- Trial 5 ---
+2026-01-18 22:12:11,232 - Testing: Model=densenet121 | LR=0.000027 | Batch=32
+2026-01-18 22:12:47,257 - Trial 5 Pruned (Stopped early due to bad performance).
+2026-01-18 22:12:47,257 - 
+--- Trial 6 ---
+2026-01-18 22:12:47,258 - Testing: Model=resnet50 | LR=0.000065 | Batch=16
+2026-01-18 22:13:21,027 - Trial 6 Pruned (Stopped early due to bad performance).
+2026-01-18 22:13:21,027 - 
+--- Trial 7 ---
+2026-01-18 22:13:21,027 - Testing: Model=densenet121 | LR=0.000059 | Batch=32
+2026-01-18 22:13:56,021 - Trial 7 Pruned (Stopped early due to bad performance).
+2026-01-18 22:13:56,022 - 
+--- Trial 8 ---
+2026-01-18 22:13:56,022 - Testing: Model=densenet121 | LR=0.000023 | Batch=32
+2026-01-18 22:15:04,542 - Trial 8 Pruned (Stopped early due to bad performance).
+2026-01-18 22:15:04,543 - 
+--- Trial 9 ---
+2026-01-18 22:15:04,543 - Testing: Model=densenet121 | LR=0.000043 | Batch=32
+2026-01-18 22:16:12,272 - Trial 9 Pruned (Stopped early due to bad performance).
+2026-01-18 22:16:12,300 - 
+--- Trial 10 ---
+2026-01-18 22:16:12,300 - Testing: Model=densenet121 | LR=0.000192 | Batch=16
+2026-01-18 22:16:51,593 - Trial 10 Pruned (Stopped early due to bad performance).
+2026-01-18 22:16:51,595 - 
+--- Trial 11 ---
+2026-01-18 22:16:51,595 - Testing: Model=resnet50 | LR=0.000748 | Batch=16
+2026-01-18 22:17:24,074 - Trial 11 Pruned (Stopped early due to bad performance).
+2026-01-18 22:17:24,077 - 
+--- Trial 12 ---
+2026-01-18 22:17:24,077 - Testing: Model=densenet121 | LR=0.000353 | Batch=16
+2026-01-18 22:18:03,449 - Trial 12 Pruned (Stopped early due to bad performance).
+2026-01-18 22:18:03,451 - 
+--- Trial 13 ---
+2026-01-18 22:18:03,451 - Testing: Model=resnet50 | LR=0.000346 | Batch=16
+2026-01-18 22:19:40,351 - Trial 13 Pruned (Stopped early due to bad performance).
+2026-01-18 22:19:40,353 - 
+--- Trial 14 ---
+2026-01-18 22:19:40,353 - Testing: Model=densenet121 | LR=0.000994 | Batch=32
+2026-01-18 22:20:49,017 - Trial 14 Pruned (Stopped early due to bad performance).
+2026-01-18 22:20:49,019 - 
+--- Trial 15 ---
+2026-01-18 22:20:49,019 - Testing: Model=resnet50 | LR=0.000331 | Batch=16
+2026-01-18 22:21:22,540 - Trial 15 Pruned (Stopped early due to bad performance).
+2026-01-18 22:21:22,542 - 
+--- Trial 16 ---
+2026-01-18 22:21:22,542 - Testing: Model=densenet121 | LR=0.000136 | Batch=32
+2026-01-18 22:22:32,128 - Trial 16 Pruned (Stopped early due to bad performance).
+2026-01-18 22:22:32,130 - 
+--- Trial 17 ---
+2026-01-18 22:22:32,130 - Testing: Model=resnet50 | LR=0.000526 | Batch=16
+2026-01-18 22:23:06,004 - Trial 17 Pruned (Stopped early due to bad performance).
+2026-01-18 22:23:06,006 - 
+--- Trial 18 ---
+2026-01-18 22:23:06,006 - Testing: Model=densenet121 | LR=0.000010 | Batch=32
+2026-01-18 22:23:41,386 - Trial 18 Pruned (Stopped early due to bad performance).
+2026-01-18 22:23:41,388 - 
+--- Trial 19 ---
+2026-01-18 22:23:41,388 - Testing: Model=resnet50 | LR=0.000247 | Batch=16
+2026-01-18 22:25:55,081 - Trial 19 Finished. Validation Accuracy: 0.8125
+2026-01-18 22:25:55,084 - 
+========================================
+2026-01-18 22:25:55,085 - OPTIMIZATION COMPLETE
+2026-01-18 22:25:55,085 - ========================================
+2026-01-18 22:25:55,085 - Best Trial: 0
+2026-01-18 22:25:55,085 - Best Accuracy: 1.0000
+2026-01-18 22:25:55,085 - Best Hyperparameters:
+2026-01-18 22:25:55,085 -   - lr: 0.00039833278553390707
+2026-01-18 22:25:55,085 -   - batch_size: 16
+2026-01-18 22:25:55,085 -   - model_name: densenet121
+2026-01-18 22:25:55,085 - Full log saved to: optuna_log.txt

@@ -1,0 +1,28 @@
+=== ANALYSIS START: densenet121 ===
+--- 1. Generating Training Curves for densenet121 ---
+✔ Graphs saved to: plot_densenet121.png
+
+--- 2. Generating Confusion Matrix for densenet121 ---
+Model Path: best_model_densenet121.pth
+Data Path: /home/projects/cgm-prj10354/ViT-vs-CNN-medical-imaging/data
+✔ Model loaded successfully.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.98      0.76      0.85       234
+   Pneumonia       0.87      0.99      0.93       390
+
+    accuracy                           0.90       624
+   macro avg       0.92      0.87      0.89       624
+weighted avg       0.91      0.90      0.90       624
+
+Confusion Matrix Raw Data:
+True Negatives (Normal correctly identified): 177
+False Positives (Normal predicted as Pneumonia): 57
+False Negatives (Pneumonia predicted as Normal): 4
+True Positives (Pneumonia correctly identified): 386
+✔ Matrix Image saved to: confusion_matrix_densenet121.png
+
+=== ANALYSIS COMPLETE ===
+Full report saved to: analysis_results_densenet121.txt

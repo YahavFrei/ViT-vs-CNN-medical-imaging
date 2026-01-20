@@ -1,0 +1,28 @@
+=== EXPLAINABILITY ANALYSIS START ===
+
+========================================
+PROCESSING MODEL: resnet50
+========================================
+Loading weights...
+✔ Saved: heatmap_resnet50_sample_1.jpg
+✔ Saved: heatmap_resnet50_sample_2.jpg
+✔ Saved: heatmap_resnet50_sample_3.jpg
+
+========================================
+PROCESSING MODEL: densenet121
+========================================
+Loading weights...
+✔ Saved: heatmap_densenet121_sample_1.jpg
+✔ Saved: heatmap_densenet121_sample_2.jpg
+✔ Saved: heatmap_densenet121_sample_3.jpg
+
+========================================
+PROCESSING MODEL: vit_base_patch16_224
+========================================
+Loading weights...
+✔ Saved: heatmap_vit_base_patch16_224_sample_1.jpg
+✔ Saved: heatmap_vit_base_patch16_224_sample_2.jpg
+✔ Saved: heatmap_vit_base_patch16_224_sample_3.jpg
+
+=== ALL EXPLANATIONS COMPLETE ===
+Log saved to: explanation_log_all_models.txt

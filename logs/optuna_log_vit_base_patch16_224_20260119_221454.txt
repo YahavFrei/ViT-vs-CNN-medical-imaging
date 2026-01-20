@@ -1,0 +1,131 @@
+2026-01-19 22:14:54,122 - Starting Optuna Hyperparameter Search for Model: vit_base_patch16_224
+2026-01-19 22:14:54,122 - Configuration: 30 Trials, 4 Epochs per Trial
+2026-01-19 22:14:54,393 - 
+--- Trial 0 for vit_base_patch16_224 ---
+2026-01-19 22:14:54,395 - Hyperparameters: LR=0.000030 | Batch_Size=16
+2026-01-19 22:17:41,180 - Trial 0 Finished. Final Validation Accuracy: 0.9232
+2026-01-19 22:17:41,183 - 
+--- Trial 1 for vit_base_patch16_224 ---
+2026-01-19 22:17:41,183 - Hyperparameters: LR=0.000084 | Batch_Size=32
+2026-01-19 22:20:09,574 - Trial 1 Finished. Final Validation Accuracy: 0.9079
+2026-01-19 22:20:09,578 - 
+--- Trial 2 for vit_base_patch16_224 ---
+2026-01-19 22:20:09,578 - Hyperparameters: LR=0.000210 | Batch_Size=32
+2026-01-19 22:22:38,381 - Trial 2 Finished. Final Validation Accuracy: 0.9213
+2026-01-19 22:22:38,384 - 
+--- Trial 3 for vit_base_patch16_224 ---
+2026-01-19 22:22:38,384 - Hyperparameters: LR=0.000240 | Batch_Size=16
+2026-01-19 22:25:19,949 - Trial 3 Finished. Final Validation Accuracy: 0.9117
+2026-01-19 22:25:19,952 - 
+--- Trial 4 for vit_base_patch16_224 ---
+2026-01-19 22:25:19,952 - Hyperparameters: LR=0.000082 | Batch_Size=32
+2026-01-19 22:27:49,583 - Trial 4 Finished. Final Validation Accuracy: 0.8772
+2026-01-19 22:27:49,586 - 
+--- Trial 5 for vit_base_patch16_224 ---
+2026-01-19 22:27:49,586 - Hyperparameters: LR=0.000072 | Batch_Size=32
+2026-01-19 22:29:42,463 - Trial 5 Pruned (Stopped early due to poor performance).
+2026-01-19 22:29:42,463 - 
+--- Trial 6 for vit_base_patch16_224 ---
+2026-01-19 22:29:42,463 - Hyperparameters: LR=0.000015 | Batch_Size=16
+2026-01-19 22:32:25,286 - Trial 6 Finished. Final Validation Accuracy: 0.8234
+2026-01-19 22:32:25,289 - 
+--- Trial 7 for vit_base_patch16_224 ---
+2026-01-19 22:32:25,289 - Hyperparameters: LR=0.000013 | Batch_Size=32
+2026-01-19 22:34:55,844 - Trial 7 Finished. Final Validation Accuracy: 0.9559
+2026-01-19 22:34:55,848 - 
+--- Trial 8 for vit_base_patch16_224 ---
+2026-01-19 22:34:55,848 - Hyperparameters: LR=0.000070 | Batch_Size=32
+2026-01-19 22:35:34,377 - Trial 8 Pruned (Stopped early due to poor performance).
+2026-01-19 22:35:34,377 - 
+--- Trial 9 for vit_base_patch16_224 ---
+2026-01-19 22:35:34,377 - Hyperparameters: LR=0.000174 | Batch_Size=32
+2026-01-19 22:36:12,840 - Trial 9 Pruned (Stopped early due to poor performance).
+2026-01-19 22:36:12,848 - 
+--- Trial 10 for vit_base_patch16_224 ---
+2026-01-19 22:36:12,848 - Hyperparameters: LR=0.000011 | Batch_Size=16
+2026-01-19 22:38:55,838 - Trial 10 Finished. Final Validation Accuracy: 0.9405
+2026-01-19 22:38:55,842 - 
+--- Trial 11 for vit_base_patch16_224 ---
+2026-01-19 22:38:55,842 - Hyperparameters: LR=0.000012 | Batch_Size=16
+2026-01-19 22:41:39,165 - Trial 11 Finished. Final Validation Accuracy: 0.9501
+2026-01-19 22:41:39,170 - 
+--- Trial 12 for vit_base_patch16_224 ---
+2026-01-19 22:41:39,170 - Hyperparameters: LR=0.000644 | Batch_Size=16
+2026-01-19 22:42:20,757 - Trial 12 Pruned (Stopped early due to poor performance).
+2026-01-19 22:42:20,759 - 
+--- Trial 13 for vit_base_patch16_224 ---
+2026-01-19 22:42:20,760 - Hyperparameters: LR=0.000024 | Batch_Size=16
+2026-01-19 22:43:02,469 - Trial 13 Pruned (Stopped early due to poor performance).
+2026-01-19 22:43:02,471 - 
+--- Trial 14 for vit_base_patch16_224 ---
+2026-01-19 22:43:02,471 - Hyperparameters: LR=0.000030 | Batch_Size=32
+2026-01-19 22:45:33,393 - Trial 14 Finished. Final Validation Accuracy: 0.8983
+2026-01-19 22:45:33,397 - 
+--- Trial 15 for vit_base_patch16_224 ---
+2026-01-19 22:45:33,397 - Hyperparameters: LR=0.000010 | Batch_Size=16
+2026-01-19 22:46:14,979 - Trial 15 Pruned (Stopped early due to poor performance).
+2026-01-19 22:46:14,981 - 
+--- Trial 16 for vit_base_patch16_224 ---
+2026-01-19 22:46:14,981 - Hyperparameters: LR=0.000016 | Batch_Size=16
+2026-01-19 22:48:57,699 - Trial 16 Finished. Final Validation Accuracy: 0.9386
+2026-01-19 22:48:57,703 - 
+--- Trial 17 for vit_base_patch16_224 ---
+2026-01-19 22:48:57,703 - Hyperparameters: LR=0.000044 | Batch_Size=32
+2026-01-19 22:49:36,313 - Trial 17 Pruned (Stopped early due to poor performance).
+2026-01-19 22:49:36,315 - 
+--- Trial 18 for vit_base_patch16_224 ---
+2026-01-19 22:49:36,315 - Hyperparameters: LR=0.000885 | Batch_Size=32
+2026-01-19 22:50:14,684 - Trial 18 Pruned (Stopped early due to poor performance).
+2026-01-19 22:50:14,686 - 
+--- Trial 19 for vit_base_patch16_224 ---
+2026-01-19 22:50:14,686 - Hyperparameters: LR=0.000043 | Batch_Size=16
+2026-01-19 22:50:56,340 - Trial 19 Pruned (Stopped early due to poor performance).
+2026-01-19 22:50:56,343 - 
+--- Trial 20 for vit_base_patch16_224 ---
+2026-01-19 22:50:56,343 - Hyperparameters: LR=0.000019 | Batch_Size=32
+2026-01-19 22:53:26,912 - Trial 20 Finished. Final Validation Accuracy: 0.9194
+2026-01-19 22:53:26,917 - 
+--- Trial 21 for vit_base_patch16_224 ---
+2026-01-19 22:53:26,917 - Hyperparameters: LR=0.000011 | Batch_Size=16
+2026-01-19 22:54:08,547 - Trial 21 Pruned (Stopped early due to poor performance).
+2026-01-19 22:54:08,550 - 
+--- Trial 22 for vit_base_patch16_224 ---
+2026-01-19 22:54:08,550 - Hyperparameters: LR=0.000013 | Batch_Size=16
+2026-01-19 22:54:50,162 - Trial 22 Pruned (Stopped early due to poor performance).
+2026-01-19 22:54:50,164 - 
+--- Trial 23 for vit_base_patch16_224 ---
+2026-01-19 22:54:50,164 - Hyperparameters: LR=0.000022 | Batch_Size=16
+2026-01-19 22:55:31,743 - Trial 23 Pruned (Stopped early due to poor performance).
+2026-01-19 22:55:31,745 - 
+--- Trial 24 for vit_base_patch16_224 ---
+2026-01-19 22:55:31,745 - Hyperparameters: LR=0.000047 | Batch_Size=16
+2026-01-19 22:56:13,345 - Trial 24 Pruned (Stopped early due to poor performance).
+2026-01-19 22:56:13,348 - 
+--- Trial 25 for vit_base_patch16_224 ---
+2026-01-19 22:56:13,348 - Hyperparameters: LR=0.000011 | Batch_Size=16
+2026-01-19 22:58:56,545 - Trial 25 Finished. Final Validation Accuracy: 0.9597
+2026-01-19 22:58:56,550 - 
+--- Trial 26 for vit_base_patch16_224 ---
+2026-01-19 22:58:56,550 - Hyperparameters: LR=0.000016 | Batch_Size=16
+2026-01-19 22:59:38,181 - Trial 26 Pruned (Stopped early due to poor performance).
+2026-01-19 22:59:38,183 - 
+--- Trial 27 for vit_base_patch16_224 ---
+2026-01-19 22:59:38,183 - Hyperparameters: LR=0.000030 | Batch_Size=16
+2026-01-19 23:00:19,931 - Trial 27 Pruned (Stopped early due to poor performance).
+2026-01-19 23:00:19,933 - 
+--- Trial 28 for vit_base_patch16_224 ---
+2026-01-19 23:00:19,933 - Hyperparameters: LR=0.000316 | Batch_Size=32
+2026-01-19 23:00:58,513 - Trial 28 Pruned (Stopped early due to poor performance).
+2026-01-19 23:00:58,515 - 
+--- Trial 29 for vit_base_patch16_224 ---
+2026-01-19 23:00:58,515 - Hyperparameters: LR=0.000141 | Batch_Size=16
+2026-01-19 23:01:40,233 - Trial 29 Pruned (Stopped early due to poor performance).
+2026-01-19 23:01:40,233 - ========================================
+2026-01-19 23:01:40,234 - OPTIMIZATION COMPLETE FOR vit_base_patch16_224
+2026-01-19 23:01:40,234 - ========================================
+2026-01-19 23:01:40,234 - Best Accuracy Achieved: 0.9597
+2026-01-19 23:01:40,234 - Best Hyperparameters Found:
+2026-01-19 23:01:40,234 -   - lr: 1.090821638524932e-05
+2026-01-19 23:01:40,234 -   - batch_size: 16
+2026-01-19 23:01:40,234 - Full log has been saved to: optuna_log_vit_base_patch16_224_20260119_221454.txt
+2026-01-19 23:01:40,234 - ========================================

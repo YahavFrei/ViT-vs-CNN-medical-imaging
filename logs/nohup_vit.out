@@ -1,0 +1,313 @@
+nohup: ignoring input
+Starting Optuna Hyperparameter Search for Model: vit_base_patch16_224
+Configuration: 30 Trials, 4 Epochs per Trial
+[I 2026-01-19 22:14:54,122] A new study created in memory with name: no-name-c98c2dd8-1f64-4dff-864a-6e42200ed791
+
+--- Trial 0 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000030 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 0 Finished. Final Validation Accuracy: 0.9232
+[I 2026-01-19 22:17:41,183] Trial 0 finished with value: 0.9232245681381958 and parameters: {'lr': 2.9997479188620283e-05, 'batch_size': 16}. Best is trial 0 with value: 0.9232245681381958.
+
+--- Trial 1 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000084 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 1 Finished. Final Validation Accuracy: 0.9079
+[I 2026-01-19 22:20:09,577] Trial 1 finished with value: 0.9078694817658349 and parameters: {'lr': 8.408417609761788e-05, 'batch_size': 32}. Best is trial 0 with value: 0.9232245681381958.
+
+--- Trial 2 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000210 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 2 Finished. Final Validation Accuracy: 0.9213
+[I 2026-01-19 22:22:38,383] Trial 2 finished with value: 0.9213051823416507 and parameters: {'lr': 0.00020979402601966585, 'batch_size': 32}. Best is trial 0 with value: 0.9232245681381958.
+
+--- Trial 3 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000240 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 3 Finished. Final Validation Accuracy: 0.9117
+[I 2026-01-19 22:25:19,951] Trial 3 finished with value: 0.9117082533589251 and parameters: {'lr': 0.00023967322207733518, 'batch_size': 16}. Best is trial 0 with value: 0.9232245681381958.
+
+--- Trial 4 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000082 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 4 Finished. Final Validation Accuracy: 0.8772
+[I 2026-01-19 22:27:49,586] Trial 4 finished with value: 0.8771593090211133 and parameters: {'lr': 8.164288458080642e-05, 'batch_size': 32}. Best is trial 0 with value: 0.9232245681381958.
+
+--- Trial 5 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000072 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 5 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:29:42,463] Trial 5 pruned. 
+
+--- Trial 6 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000015 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 6 Finished. Final Validation Accuracy: 0.8234
+[I 2026-01-19 22:32:25,289] Trial 6 finished with value: 0.8234165067178503 and parameters: {'lr': 1.533568061253899e-05, 'batch_size': 16}. Best is trial 0 with value: 0.9232245681381958.
+
+--- Trial 7 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000013 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 7 Finished. Final Validation Accuracy: 0.9559
+[I 2026-01-19 22:34:55,847] Trial 7 finished with value: 0.9558541266794626 and parameters: {'lr': 1.2611756261595946e-05, 'batch_size': 32}. Best is trial 7 with value: 0.9558541266794626.
+
+--- Trial 8 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000070 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 8 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:35:34,377] Trial 8 pruned. 
+
+--- Trial 9 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000174 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 9 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:36:12,840] Trial 9 pruned. 
+
+--- Trial 10 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000011 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 10 Finished. Final Validation Accuracy: 0.9405
+[I 2026-01-19 22:38:55,840] Trial 10 finished with value: 0.9404990403071017 and parameters: {'lr': 1.063861208648547e-05, 'batch_size': 16}. Best is trial 7 with value: 0.9558541266794626.
+
+--- Trial 11 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000012 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 11 Finished. Final Validation Accuracy: 0.9501
+[I 2026-01-19 22:41:39,168] Trial 11 finished with value: 0.9500959692898272 and parameters: {'lr': 1.2091968504470937e-05, 'batch_size': 16}. Best is trial 7 with value: 0.9558541266794626.
+
+--- Trial 12 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000644 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 12 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:42:20,757] Trial 12 pruned. 
+
+--- Trial 13 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000024 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 13 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:43:02,469] Trial 13 pruned. 
+
+--- Trial 14 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000030 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 14 Finished. Final Validation Accuracy: 0.8983
+[I 2026-01-19 22:45:33,395] Trial 14 finished with value: 0.8982725527831094 and parameters: {'lr': 2.9958108165560608e-05, 'batch_size': 32}. Best is trial 7 with value: 0.9558541266794626.
+
+--- Trial 15 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000010 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 15 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:46:14,979] Trial 15 pruned. 
+
+--- Trial 16 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000016 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 16 Finished. Final Validation Accuracy: 0.9386
+[I 2026-01-19 22:48:57,701] Trial 16 finished with value: 0.9385796545105566 and parameters: {'lr': 1.6420666419667936e-05, 'batch_size': 16}. Best is trial 7 with value: 0.9558541266794626.
+
+--- Trial 17 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000044 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 17 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:49:36,313] Trial 17 pruned. 
+
+--- Trial 18 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000885 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 18 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:50:14,684] Trial 18 pruned. 
+
+--- Trial 19 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000043 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 19 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:50:56,340] Trial 19 pruned. 
+
+--- Trial 20 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000019 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 20 Finished. Final Validation Accuracy: 0.9194
+[I 2026-01-19 22:53:26,915] Trial 20 finished with value: 0.9193857965451055 and parameters: {'lr': 1.947434212443833e-05, 'batch_size': 32}. Best is trial 7 with value: 0.9558541266794626.
+
+--- Trial 21 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000011 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 21 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:54:08,548] Trial 21 pruned. 
+
+--- Trial 22 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000013 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 22 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:54:50,162] Trial 22 pruned. 
+
+--- Trial 23 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000022 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 23 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:55:31,743] Trial 23 pruned. 
+
+--- Trial 24 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000047 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 24 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:56:13,346] Trial 24 pruned. 
+
+--- Trial 25 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000011 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 25 Finished. Final Validation Accuracy: 0.9597
+[I 2026-01-19 22:58:56,548] Trial 25 finished with value: 0.9596928982725528 and parameters: {'lr': 1.090821638524932e-05, 'batch_size': 16}. Best is trial 25 with value: 0.9596928982725528.
+
+--- Trial 26 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000016 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 26 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:59:38,181] Trial 26 pruned. 
+
+--- Trial 27 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000030 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 27 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 23:00:19,931] Trial 27 pruned. 
+
+--- Trial 28 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000316 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 28 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 23:00:58,513] Trial 28 pruned. 
+
+--- Trial 29 for vit_base_patch16_224 ---
+Hyperparameters: LR=0.000141 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 29 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 23:01:40,233] Trial 29 pruned. 
+========================================
+OPTIMIZATION COMPLETE FOR vit_base_patch16_224
+========================================
+Best Accuracy Achieved: 0.9597
+Best Hyperparameters Found:
+  - lr: 1.090821638524932e-05
+  - batch_size: 16
+Full log has been saved to: optuna_log_vit_base_patch16_224_20260119_221454.txt
+========================================

@@ -1,0 +1,131 @@
+2026-01-19 22:25:16,366 - Starting Optuna Hyperparameter Search for Model: densenet121
+2026-01-19 22:25:16,366 - Configuration: 30 Trials, 4 Epochs per Trial
+2026-01-19 22:25:16,526 - 
+--- Trial 0 for densenet121 ---
+2026-01-19 22:25:16,526 - Hyperparameters: LR=0.000615 | Batch_Size=32
+2026-01-19 22:26:37,268 - Trial 0 Finished. Final Validation Accuracy: 0.9789
+2026-01-19 22:26:37,274 - 
+--- Trial 1 for densenet121 ---
+2026-01-19 22:26:37,274 - Hyperparameters: LR=0.000291 | Batch_Size=16
+2026-01-19 22:28:03,211 - Trial 1 Finished. Final Validation Accuracy: 0.9155
+2026-01-19 22:28:03,217 - 
+--- Trial 2 for densenet121 ---
+2026-01-19 22:28:03,217 - Hyperparameters: LR=0.000422 | Batch_Size=32
+2026-01-19 22:29:17,630 - Trial 2 Finished. Final Validation Accuracy: 0.8733
+2026-01-19 22:29:17,636 - 
+--- Trial 3 for densenet121 ---
+2026-01-19 22:29:17,636 - Hyperparameters: LR=0.000037 | Batch_Size=32
+2026-01-19 22:30:32,387 - Trial 3 Finished. Final Validation Accuracy: 0.9578
+2026-01-19 22:30:32,393 - 
+--- Trial 4 for densenet121 ---
+2026-01-19 22:30:32,393 - Hyperparameters: LR=0.000146 | Batch_Size=16
+2026-01-19 22:31:57,543 - Trial 4 Finished. Final Validation Accuracy: 0.9539
+2026-01-19 22:31:57,550 - 
+--- Trial 5 for densenet121 ---
+2026-01-19 22:31:57,550 - Hyperparameters: LR=0.000112 | Batch_Size=32
+2026-01-19 22:32:35,064 - Trial 5 Pruned (Stopped early due to poor performance).
+2026-01-19 22:32:35,064 - 
+--- Trial 6 for densenet121 ---
+2026-01-19 22:32:35,065 - Hyperparameters: LR=0.000027 | Batch_Size=16
+2026-01-19 22:32:56,796 - Trial 6 Pruned (Stopped early due to poor performance).
+2026-01-19 22:32:56,797 - 
+--- Trial 7 for densenet121 ---
+2026-01-19 22:32:56,797 - Hyperparameters: LR=0.000262 | Batch_Size=32
+2026-01-19 22:33:34,210 - Trial 7 Pruned (Stopped early due to poor performance).
+2026-01-19 22:33:34,211 - 
+--- Trial 8 for densenet121 ---
+2026-01-19 22:33:34,211 - Hyperparameters: LR=0.000026 | Batch_Size=32
+2026-01-19 22:33:53,098 - Trial 8 Pruned (Stopped early due to poor performance).
+2026-01-19 22:33:53,098 - 
+--- Trial 9 for densenet121 ---
+2026-01-19 22:33:53,098 - Hyperparameters: LR=0.000254 | Batch_Size=16
+2026-01-19 22:34:14,804 - Trial 9 Pruned (Stopped early due to poor performance).
+2026-01-19 22:34:14,828 - 
+--- Trial 10 for densenet121 ---
+2026-01-19 22:34:14,828 - Hyperparameters: LR=0.000765 | Batch_Size=32
+2026-01-19 22:34:52,217 - Trial 10 Pruned (Stopped early due to poor performance).
+2026-01-19 22:34:52,219 - 
+--- Trial 11 for densenet121 ---
+2026-01-19 22:34:52,219 - Hyperparameters: LR=0.000011 | Batch_Size=32
+2026-01-19 22:35:11,021 - Trial 11 Pruned (Stopped early due to poor performance).
+2026-01-19 22:35:11,023 - 
+--- Trial 12 for densenet121 ---
+2026-01-19 22:35:11,023 - Hyperparameters: LR=0.000056 | Batch_Size=32
+2026-01-19 22:35:29,884 - Trial 12 Pruned (Stopped early due to poor performance).
+2026-01-19 22:35:29,886 - 
+--- Trial 13 for densenet121 ---
+2026-01-19 22:35:29,886 - Hyperparameters: LR=0.000935 | Batch_Size=32
+2026-01-19 22:35:48,756 - Trial 13 Pruned (Stopped early due to poor performance).
+2026-01-19 22:35:48,759 - 
+--- Trial 14 for densenet121 ---
+2026-01-19 22:35:48,759 - Hyperparameters: LR=0.000051 | Batch_Size=32
+2026-01-19 22:36:07,710 - Trial 14 Pruned (Stopped early due to poor performance).
+2026-01-19 22:36:07,712 - 
+--- Trial 15 for densenet121 ---
+2026-01-19 22:36:07,712 - Hyperparameters: LR=0.000052 | Batch_Size=32
+2026-01-19 22:36:27,028 - Trial 15 Pruned (Stopped early due to poor performance).
+2026-01-19 22:36:27,030 - 
+--- Trial 16 for densenet121 ---
+2026-01-19 22:36:27,030 - Hyperparameters: LR=0.000018 | Batch_Size=32
+2026-01-19 22:36:45,935 - Trial 16 Pruned (Stopped early due to poor performance).
+2026-01-19 22:36:45,937 - 
+--- Trial 17 for densenet121 ---
+2026-01-19 22:36:45,937 - Hyperparameters: LR=0.000553 | Batch_Size=32
+2026-01-19 22:37:04,904 - Trial 17 Pruned (Stopped early due to poor performance).
+2026-01-19 22:37:04,906 - 
+--- Trial 18 for densenet121 ---
+2026-01-19 22:37:04,906 - Hyperparameters: LR=0.000149 | Batch_Size=16
+2026-01-19 22:37:47,624 - Trial 18 Pruned (Stopped early due to poor performance).
+2026-01-19 22:37:47,626 - 
+--- Trial 19 for densenet121 ---
+2026-01-19 22:37:47,626 - Hyperparameters: LR=0.000090 | Batch_Size=32
+2026-01-19 22:38:06,489 - Trial 19 Pruned (Stopped early due to poor performance).
+2026-01-19 22:38:06,492 - 
+--- Trial 20 for densenet121 ---
+2026-01-19 22:38:06,492 - Hyperparameters: LR=0.000075 | Batch_Size=32
+2026-01-19 22:38:25,685 - Trial 20 Pruned (Stopped early due to poor performance).
+2026-01-19 22:38:25,687 - 
+--- Trial 21 for densenet121 ---
+2026-01-19 22:38:25,687 - Hyperparameters: LR=0.000173 | Batch_Size=16
+2026-01-19 22:38:47,414 - Trial 21 Pruned (Stopped early due to poor performance).
+2026-01-19 22:38:47,416 - 
+--- Trial 22 for densenet121 ---
+2026-01-19 22:38:47,416 - Hyperparameters: LR=0.000032 | Batch_Size=16
+2026-01-19 22:39:08,819 - Trial 22 Pruned (Stopped early due to poor performance).
+2026-01-19 22:39:08,821 - 
+--- Trial 23 for densenet121 ---
+2026-01-19 22:39:08,821 - Hyperparameters: LR=0.000444 | Batch_Size=16
+2026-01-19 22:39:30,337 - Trial 23 Pruned (Stopped early due to poor performance).
+2026-01-19 22:39:30,339 - 
+--- Trial 24 for densenet121 ---
+2026-01-19 22:39:30,339 - Hyperparameters: LR=0.000157 | Batch_Size=16
+2026-01-19 22:40:55,519 - Trial 24 Finished. Final Validation Accuracy: 0.9712
+2026-01-19 22:40:55,526 - 
+--- Trial 25 for densenet121 ---
+2026-01-19 22:40:55,526 - Hyperparameters: LR=0.000632 | Batch_Size=16
+2026-01-19 22:41:17,164 - Trial 25 Pruned (Stopped early due to poor performance).
+2026-01-19 22:41:17,166 - 
+--- Trial 26 for densenet121 ---
+2026-01-19 22:41:17,166 - Hyperparameters: LR=0.000015 | Batch_Size=16
+2026-01-19 22:41:38,686 - Trial 26 Pruned (Stopped early due to poor performance).
+2026-01-19 22:41:38,688 - 
+--- Trial 27 for densenet121 ---
+2026-01-19 22:41:38,688 - Hyperparameters: LR=0.000040 | Batch_Size=32
+2026-01-19 22:41:57,668 - Trial 27 Pruned (Stopped early due to poor performance).
+2026-01-19 22:41:57,670 - 
+--- Trial 28 for densenet121 ---
+2026-01-19 22:41:57,670 - Hyperparameters: LR=0.000195 | Batch_Size=16
+2026-01-19 22:42:18,985 - Trial 28 Pruned (Stopped early due to poor performance).
+2026-01-19 22:42:18,987 - 
+--- Trial 29 for densenet121 ---
+2026-01-19 22:42:18,987 - Hyperparameters: LR=0.000366 | Batch_Size=16
+2026-01-19 22:42:40,643 - Trial 29 Pruned (Stopped early due to poor performance).
+2026-01-19 22:42:40,643 - ========================================
+2026-01-19 22:42:40,644 - OPTIMIZATION COMPLETE FOR densenet121
+2026-01-19 22:42:40,644 - ========================================
+2026-01-19 22:42:40,644 - Best Accuracy Achieved: 0.9789
+2026-01-19 22:42:40,644 - Best Hyperparameters Found:
+2026-01-19 22:42:40,644 -   - lr: 0.0006149011655225148
+2026-01-19 22:42:40,644 -   - batch_size: 32
+2026-01-19 22:42:40,644 - Full log has been saved to: optuna_log_densenet121_20260119_222516.txt
+2026-01-19 22:42:40,644 - ========================================

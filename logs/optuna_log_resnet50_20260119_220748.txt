@@ -1,0 +1,131 @@
+2026-01-19 22:07:48,065 - Starting Optuna Hyperparameter Search for Model: resnet50
+2026-01-19 22:07:48,065 - Configuration: 30 Trials, 4 Epochs per Trial
+2026-01-19 22:07:48,065 - 
+--- Trial 0 for resnet50 ---
+2026-01-19 22:07:48,066 - Hyperparameters: LR=0.000180 | Batch_Size=16
+2026-01-19 22:09:51,761 - Trial 0 Finished. Final Validation Accuracy: 0.9175
+2026-01-19 22:09:51,764 - 
+--- Trial 1 for resnet50 ---
+2026-01-19 22:09:51,764 - Hyperparameters: LR=0.000116 | Batch_Size=32
+2026-01-19 22:11:47,747 - Trial 1 Finished. Final Validation Accuracy: 0.9443
+2026-01-19 22:11:47,750 - 
+--- Trial 2 for resnet50 ---
+2026-01-19 22:11:47,750 - Hyperparameters: LR=0.000044 | Batch_Size=32
+2026-01-19 22:13:44,567 - Trial 2 Finished. Final Validation Accuracy: 0.9328
+2026-01-19 22:13:44,570 - 
+--- Trial 3 for resnet50 ---
+2026-01-19 22:13:44,570 - Hyperparameters: LR=0.000011 | Batch_Size=32
+2026-01-19 22:15:45,522 - Trial 3 Finished. Final Validation Accuracy: 0.7831
+2026-01-19 22:15:45,525 - 
+--- Trial 4 for resnet50 ---
+2026-01-19 22:15:45,526 - Hyperparameters: LR=0.000333 | Batch_Size=16
+2026-01-19 22:17:43,526 - Trial 4 Finished. Final Validation Accuracy: 0.9443
+2026-01-19 22:17:43,529 - 
+--- Trial 5 for resnet50 ---
+2026-01-19 22:17:43,529 - Hyperparameters: LR=0.000043 | Batch_Size=32
+2026-01-19 22:18:12,685 - Trial 5 Pruned (Stopped early due to poor performance).
+2026-01-19 22:18:12,686 - 
+--- Trial 6 for resnet50 ---
+2026-01-19 22:18:12,686 - Hyperparameters: LR=0.000033 | Batch_Size=16
+2026-01-19 22:18:43,373 - Trial 6 Pruned (Stopped early due to poor performance).
+2026-01-19 22:18:43,373 - 
+--- Trial 7 for resnet50 ---
+2026-01-19 22:18:43,373 - Hyperparameters: LR=0.000553 | Batch_Size=16
+2026-01-19 22:20:42,631 - Trial 7 Finished. Final Validation Accuracy: 0.9155
+2026-01-19 22:20:42,634 - 
+--- Trial 8 for resnet50 ---
+2026-01-19 22:20:42,634 - Hyperparameters: LR=0.000022 | Batch_Size=16
+2026-01-19 22:21:12,766 - Trial 8 Pruned (Stopped early due to poor performance).
+2026-01-19 22:21:12,767 - 
+--- Trial 9 for resnet50 ---
+2026-01-19 22:21:12,767 - Hyperparameters: LR=0.000091 | Batch_Size=16
+2026-01-19 22:22:12,170 - Trial 9 Pruned (Stopped early due to poor performance).
+2026-01-19 22:22:12,178 - 
+--- Trial 10 for resnet50 ---
+2026-01-19 22:22:12,178 - Hyperparameters: LR=0.000129 | Batch_Size=32
+2026-01-19 22:23:07,966 - Trial 10 Pruned (Stopped early due to poor performance).
+2026-01-19 22:23:07,967 - 
+--- Trial 11 for resnet50 ---
+2026-01-19 22:23:07,967 - Hyperparameters: LR=0.000503 | Batch_Size=32
+2026-01-19 22:24:04,204 - Trial 11 Pruned (Stopped early due to poor performance).
+2026-01-19 22:24:04,206 - 
+--- Trial 12 for resnet50 ---
+2026-01-19 22:24:04,207 - Hyperparameters: LR=0.000271 | Batch_Size=16
+2026-01-19 22:26:04,760 - Trial 12 Finished. Final Validation Accuracy: 0.9520
+2026-01-19 22:26:04,764 - 
+--- Trial 13 for resnet50 ---
+2026-01-19 22:26:04,764 - Hyperparameters: LR=0.000929 | Batch_Size=32
+2026-01-19 22:26:33,744 - Trial 13 Pruned (Stopped early due to poor performance).
+2026-01-19 22:26:33,745 - 
+--- Trial 14 for resnet50 ---
+2026-01-19 22:26:33,745 - Hyperparameters: LR=0.000227 | Batch_Size=16
+2026-01-19 22:28:35,577 - Trial 14 Finished. Final Validation Accuracy: 0.9578
+2026-01-19 22:28:35,581 - 
+--- Trial 15 for resnet50 ---
+2026-01-19 22:28:35,581 - Hyperparameters: LR=0.000260 | Batch_Size=16
+2026-01-19 22:30:37,828 - Trial 15 Finished. Final Validation Accuracy: 0.9693
+2026-01-19 22:30:37,832 - 
+--- Trial 16 for resnet50 ---
+2026-01-19 22:30:37,832 - Hyperparameters: LR=0.000241 | Batch_Size=16
+2026-01-19 22:31:09,405 - Trial 16 Pruned (Stopped early due to poor performance).
+2026-01-19 22:31:09,406 - 
+--- Trial 17 for resnet50 ---
+2026-01-19 22:31:09,406 - Hyperparameters: LR=0.000081 | Batch_Size=16
+2026-01-19 22:31:41,017 - Trial 17 Pruned (Stopped early due to poor performance).
+2026-01-19 22:31:41,019 - 
+--- Trial 18 for resnet50 ---
+2026-01-19 22:31:41,019 - Hyperparameters: LR=0.000454 | Batch_Size=16
+2026-01-19 22:32:12,636 - Trial 18 Pruned (Stopped early due to poor performance).
+2026-01-19 22:32:12,638 - 
+--- Trial 19 for resnet50 ---
+2026-01-19 22:32:12,638 - Hyperparameters: LR=0.000981 | Batch_Size=16
+2026-01-19 22:32:44,464 - Trial 19 Pruned (Stopped early due to poor performance).
+2026-01-19 22:32:44,466 - 
+--- Trial 20 for resnet50 ---
+2026-01-19 22:32:44,466 - Hyperparameters: LR=0.000162 | Batch_Size=16
+2026-01-19 22:33:16,132 - Trial 20 Pruned (Stopped early due to poor performance).
+2026-01-19 22:33:16,134 - 
+--- Trial 21 for resnet50 ---
+2026-01-19 22:33:16,134 - Hyperparameters: LR=0.000246 | Batch_Size=16
+2026-01-19 22:35:20,212 - Trial 21 Finished. Final Validation Accuracy: 0.9136
+2026-01-19 22:35:20,216 - 
+--- Trial 22 for resnet50 ---
+2026-01-19 22:35:20,216 - Hyperparameters: LR=0.000311 | Batch_Size=16
+2026-01-19 22:35:51,746 - Trial 22 Pruned (Stopped early due to poor performance).
+2026-01-19 22:35:51,748 - 
+--- Trial 23 for resnet50 ---
+2026-01-19 22:35:51,748 - Hyperparameters: LR=0.000189 | Batch_Size=16
+2026-01-19 22:36:23,404 - Trial 23 Pruned (Stopped early due to poor performance).
+2026-01-19 22:36:23,406 - 
+--- Trial 24 for resnet50 ---
+2026-01-19 22:36:23,406 - Hyperparameters: LR=0.000359 | Batch_Size=16
+2026-01-19 22:36:55,038 - Trial 24 Pruned (Stopped early due to poor performance).
+2026-01-19 22:36:55,039 - 
+--- Trial 25 for resnet50 ---
+2026-01-19 22:36:55,039 - Hyperparameters: LR=0.000762 | Batch_Size=16
+2026-01-19 22:38:59,173 - Trial 25 Finished. Final Validation Accuracy: 0.9616
+2026-01-19 22:38:59,177 - 
+--- Trial 26 for resnet50 ---
+2026-01-19 22:38:59,177 - Hyperparameters: LR=0.000661 | Batch_Size=16
+2026-01-19 22:39:31,155 - Trial 26 Pruned (Stopped early due to poor performance).
+2026-01-19 22:39:31,158 - 
+--- Trial 27 for resnet50 ---
+2026-01-19 22:39:31,158 - Hyperparameters: LR=0.000724 | Batch_Size=16
+2026-01-19 22:40:03,034 - Trial 27 Pruned (Stopped early due to poor performance).
+2026-01-19 22:40:03,036 - 
+--- Trial 28 for resnet50 ---
+2026-01-19 22:40:03,036 - Hyperparameters: LR=0.000439 | Batch_Size=16
+2026-01-19 22:42:09,099 - Trial 28 Finished. Final Validation Accuracy: 0.9578
+2026-01-19 22:42:09,103 - 
+--- Trial 29 for resnet50 ---
+2026-01-19 22:42:09,103 - Hyperparameters: LR=0.000064 | Batch_Size=16
+2026-01-19 22:42:41,137 - Trial 29 Pruned (Stopped early due to poor performance).
+2026-01-19 22:42:41,137 - ========================================
+2026-01-19 22:42:41,137 - OPTIMIZATION COMPLETE FOR resnet50
+2026-01-19 22:42:41,137 - ========================================
+2026-01-19 22:42:41,138 - Best Accuracy Achieved: 0.9693
+2026-01-19 22:42:41,138 - Best Hyperparameters Found:
+2026-01-19 22:42:41,138 -   - lr: 0.00026027353073795645
+2026-01-19 22:42:41,138 -   - batch_size: 16
+2026-01-19 22:42:41,138 - Full log has been saved to: optuna_log_resnet50_20260119_220748.txt
+2026-01-19 22:42:41,138 - ========================================

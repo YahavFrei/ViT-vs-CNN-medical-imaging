@@ -1,0 +1,314 @@
+nohup: ignoring input
+Starting Optuna Hyperparameter Search for Model: densenet121
+Configuration: 30 Trials, 4 Epochs per Trial
+[I 2026-01-19 22:25:16,367] A new study created in memory with name: no-name-9eb3b4b5-2652-4fc8-9ea9-b4a64aaf8546
+
+--- Trial 0 for densenet121 ---
+Hyperparameters: LR=0.000615 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 0 Finished. Final Validation Accuracy: 0.9789
+[I 2026-01-19 22:26:37,273] Trial 0 finished with value: 0.9788867562380038 and parameters: {'lr': 0.0006149011655225148, 'batch_size': 32}. Best is trial 0 with value: 0.9788867562380038.
+
+--- Trial 1 for densenet121 ---
+Hyperparameters: LR=0.000291 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 1 Finished. Final Validation Accuracy: 0.9155
+[I 2026-01-19 22:28:03,216] Trial 1 finished with value: 0.9155470249520153 and parameters: {'lr': 0.00029115024262144795, 'batch_size': 16}. Best is trial 0 with value: 0.9788867562380038.
+
+--- Trial 2 for densenet121 ---
+Hyperparameters: LR=0.000422 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 2 Finished. Final Validation Accuracy: 0.8733
+[I 2026-01-19 22:29:17,635] Trial 2 finished with value: 0.8733205374280231 and parameters: {'lr': 0.0004224399802255578, 'batch_size': 32}. Best is trial 0 with value: 0.9788867562380038.
+
+--- Trial 3 for densenet121 ---
+Hyperparameters: LR=0.000037 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 3 Finished. Final Validation Accuracy: 0.9578
+[I 2026-01-19 22:30:32,393] Trial 3 finished with value: 0.9577735124760077 and parameters: {'lr': 3.707922092625115e-05, 'batch_size': 32}. Best is trial 0 with value: 0.9788867562380038.
+
+--- Trial 4 for densenet121 ---
+Hyperparameters: LR=0.000146 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 4 Finished. Final Validation Accuracy: 0.9539
+[I 2026-01-19 22:31:57,549] Trial 4 finished with value: 0.9539347408829175 and parameters: {'lr': 0.000145543849578805, 'batch_size': 16}. Best is trial 0 with value: 0.9788867562380038.
+
+--- Trial 5 for densenet121 ---
+Hyperparameters: LR=0.000112 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 5 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:32:35,064] Trial 5 pruned. 
+
+--- Trial 6 for densenet121 ---
+Hyperparameters: LR=0.000027 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 6 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:32:56,796] Trial 6 pruned. 
+
+--- Trial 7 for densenet121 ---
+Hyperparameters: LR=0.000262 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 7 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:33:34,210] Trial 7 pruned. 
+
+--- Trial 8 for densenet121 ---
+Hyperparameters: LR=0.000026 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 8 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:33:53,098] Trial 8 pruned. 
+
+--- Trial 9 for densenet121 ---
+Hyperparameters: LR=0.000254 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 9 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:34:14,804] Trial 9 pruned. 
+
+--- Trial 10 for densenet121 ---
+Hyperparameters: LR=0.000765 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 10 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:34:52,217] Trial 10 pruned. 
+
+--- Trial 11 for densenet121 ---
+Hyperparameters: LR=0.000011 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 11 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:35:11,021] Trial 11 pruned. 
+
+--- Trial 12 for densenet121 ---
+Hyperparameters: LR=0.000056 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 12 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:35:29,884] Trial 12 pruned. 
+
+--- Trial 13 for densenet121 ---
+Hyperparameters: LR=0.000935 | Batch_Size=32
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 13 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:35:48,757] Trial 13 pruned. 
+
+--- Trial 14 for densenet121 ---
+Hyperparameters: LR=0.000051 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 14 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:36:07,710] Trial 14 pruned. 
+
+--- Trial 15 for densenet121 ---
+Hyperparameters: LR=0.000052 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 15 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:36:27,028] Trial 15 pruned. 
+
+--- Trial 16 for densenet121 ---
+Hyperparameters: LR=0.000018 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 16 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:36:45,935] Trial 16 pruned. 
+
+--- Trial 17 for densenet121 ---
+Hyperparameters: LR=0.000553 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 17 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:37:04,904] Trial 17 pruned. 
+
+--- Trial 18 for densenet121 ---
+Hyperparameters: LR=0.000149 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 18 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:37:47,624] Trial 18 pruned. 
+
+--- Trial 19 for densenet121 ---
+Hyperparameters: LR=0.000090 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 19 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:38:06,490] Trial 19 pruned. 
+
+--- Trial 20 for densenet121 ---
+Hyperparameters: LR=0.000075 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 20 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:38:25,685] Trial 20 pruned. 
+
+--- Trial 21 for densenet121 ---
+Hyperparameters: LR=0.000173 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 21 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:38:47,414] Trial 21 pruned. 
+
+--- Trial 22 for densenet121 ---
+Hyperparameters: LR=0.000032 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 22 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:39:08,819] Trial 22 pruned. 
+
+--- Trial 23 for densenet121 ---
+Hyperparameters: LR=0.000444 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 23 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:39:30,337] Trial 23 pruned. 
+
+--- Trial 24 for densenet121 ---
+Hyperparameters: LR=0.000157 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 24 Finished. Final Validation Accuracy: 0.9712
+[I 2026-01-19 22:40:55,524] Trial 24 finished with value: 0.9712092130518234 and parameters: {'lr': 0.00015689229515605265, 'batch_size': 16}. Best is trial 0 with value: 0.9788867562380038.
+
+--- Trial 25 for densenet121 ---
+Hyperparameters: LR=0.000632 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 25 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:41:17,164] Trial 25 pruned. 
+
+--- Trial 26 for densenet121 ---
+Hyperparameters: LR=0.000015 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 26 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:41:38,686] Trial 26 pruned. 
+
+--- Trial 27 for densenet121 ---
+Hyperparameters: LR=0.000040 | Batch_Size=32
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 27 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:41:57,668] Trial 27 pruned. 
+
+--- Trial 28 for densenet121 ---
+Hyperparameters: LR=0.000195 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 28 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:42:18,985] Trial 28 pruned. 
+
+--- Trial 29 for densenet121 ---
+Hyperparameters: LR=0.000366 | Batch_Size=16
+
+[DATA SUMMARY]
+   > Train Images: 4695 (Augmentation: True)
+   > Val Images:   521
+   > Test Images:  624
+Trial 29 Pruned (Stopped early due to poor performance).
+[I 2026-01-19 22:42:40,643] Trial 29 pruned. 
+========================================
+OPTIMIZATION COMPLETE FOR densenet121
+========================================
+Best Accuracy Achieved: 0.9789
+Best Hyperparameters Found:
+  - lr: 0.0006149011655225148
+  - batch_size: 32
+Full log has been saved to: optuna_log_densenet121_20260119_222516.txt
+========================================

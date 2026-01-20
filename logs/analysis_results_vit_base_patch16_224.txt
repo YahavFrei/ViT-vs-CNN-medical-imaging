@@ -1,0 +1,28 @@
+=== ANALYSIS START: vit_base_patch16_224 ===
+--- 1. Generating Training Curves for vit_base_patch16_224 ---
+✔ Graphs saved to: plot_vit_base_patch16_224.png
+
+--- 2. Generating Confusion Matrix for vit_base_patch16_224 ---
+Model Path: best_model_vit_base_patch16_224.pth
+Data Path: /home/projects/cgm-prj10354/ViT-vs-CNN-medical-imaging/data
+✔ Model loaded successfully.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.91      0.77      0.84       234
+   Pneumonia       0.88      0.96      0.91       390
+
+    accuracy                           0.89       624
+   macro avg       0.89      0.86      0.88       624
+weighted avg       0.89      0.89      0.89       624
+
+Confusion Matrix Raw Data:
+True Negatives (Normal correctly identified): 181
+False Positives (Normal predicted as Pneumonia): 53
+False Negatives (Pneumonia predicted as Normal): 17
+True Positives (Pneumonia correctly identified): 373
+✔ Matrix Image saved to: confusion_matrix_vit_base_patch16_224.png
+
+=== ANALYSIS COMPLETE ===
+Full report saved to: analysis_results_vit_base_patch16_224.txt

@@ -1,0 +1,28 @@
+=== ANALYSIS START: resnet50 ===
+--- 1. Generating Training Curves for resnet50 ---
+✔ Graphs saved to: plot_resnet50.png
+
+--- 2. Generating Confusion Matrix for resnet50 ---
+Model Path: best_model_resnet50.pth
+Data Path: /home/projects/cgm-prj10354/ViT-vs-CNN-medical-imaging/data
+✔ Model loaded successfully.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.91      0.84      0.87       234
+   Pneumonia       0.91      0.95      0.93       390
+
+    accuracy                           0.91       624
+   macro avg       0.91      0.89      0.90       624
+weighted avg       0.91      0.91      0.91       624
+
+Confusion Matrix Raw Data:
+True Negatives (Normal correctly identified): 196
+False Positives (Normal predicted as Pneumonia): 38
+False Negatives (Pneumonia predicted as Normal): 19
+True Positives (Pneumonia correctly identified): 371
+✔ Matrix Image saved to: confusion_matrix_resnet50.png
+
+=== ANALYSIS COMPLETE ===
+Full report saved to: analysis_results_resnet50.txt
