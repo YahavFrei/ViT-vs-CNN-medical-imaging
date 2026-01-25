@@ -81,7 +81,7 @@ Model performance breakdown by class (Normal vs. Pneumonia):
 
 | ResNet50 | ViT (Transformer) |
 |----------|-------------------|
-| ![ResNet CM](results/plots/24.01/confusion_matrix_densenet121_20260120_174515.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224_20260120_174841.png) |
+| ![ResNet CM](results/plots/24.01/confusion_matrix_densenet121_20260120_174515_best.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224_20260120_174841_best.png) |
 
 ## 🧠 Visualization & Explainability
 To understand model decisions, we visualized the regions of interest:
