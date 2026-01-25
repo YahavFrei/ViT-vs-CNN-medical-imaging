@@ -179,7 +179,8 @@ def validate(model, loader, criterion, device):
 # 4. MAIN EXECUTION FLOW
 # ==========================================
 
-def main(model_name='resnet50', learning_rate=1e-4, use_aug=True, optimizer_type='adamw'):
+#def main(model_name='resnet50', learning_rate=1e-4, use_aug=True, optimizer_type='adamw'):
+def main(model_name='resnet50', learning_rate=1e-4, batch_size=32, use_aug=True, optimizer_type='adamw'):
     """
     Main function to run the full training pipeline.
     Args:
@@ -212,7 +213,7 @@ def main(model_name='resnet50', learning_rate=1e-4, use_aug=True, optimizer_type
     logger.info("\nLoading DataLoaders...")
     train_loader, val_loader, test_loader = get_dataloaders(
         data_dir=CONFIG['data_path'], 
-        batch_size=CONFIG['batch_size'],
+        batch_size= batch_size, # CONFIG['batch_size'],
         use_augmentation=use_aug  # Pass the flag to the dataset
     )
 
@@ -291,27 +292,70 @@ def main(model_name='resnet50', learning_rate=1e-4, use_aug=True, optimizer_type
     logger.info(f"F1 Score:  {test_f1:.4f}")
     logger.info(f"{'='*50}\n")
 
+
 if __name__ == "__main__":
-    # ==========================================
-    # USER CONTROLS: UNCOMMENT THE RUN YOU NEED
-    # ==========================================
-
-    # --- RUN 1: BASELINE (Before Optuna) ---
-    # main(model_name='resnet50', learning_rate=1e-4)
-    # main(model_name='densenet121', learning_rate=1e-4)
-    main(model_name='vit_base_patch16_224', learning_rate=1e-4)
-
-    # --- RUN 2: OPTIMIZED (After Optuna results) ---
-    # Update the learning_rate below based on what Optuna finds!
-    # main(model_name='resnet50', learning_rate=1e-4) 
-
-    # --- RUN 3: ABLATION STUDIES (To satisfy Project Proposal) ---
+    # # ==========================================
+    # # 1. FINAL OPTIMIZED MODELS ("The Winners")
+    # # ==========================================
     
-    # A. ViT without Augmentation
-    # main(model_name='vit_base_patch16_224', learning_rate=1e-4, use_aug=False)
+    # # Run 1: DenseNet121 (Best Acc: 97.89%)
+    # # Params: LR=0.000615, BS=32
+    # print("--- Starting Final DenseNet Run ---")
+    # main(model_name='densenet121', learning_rate=0.000615, batch_size=32)
+
+    # # Run 2: ResNet50 (Best Acc: 96.93%)
+    # # Params: LR=0.000260, BS=16
+    # print("--- Starting Final ResNet Run ---")
+    # main(model_name='resnet50', learning_rate=0.000260, batch_size=16)
+
+    # # Run 3: ViT Base (Best Acc: 95.97%)
+    # # Params: LR=0.000011, BS=16
+    # print("--- Starting Final ViT Run ---")
+    # main(model_name='vit_base_patch16_224', learning_rate=0.000011, batch_size=16)
+
+    # # ==========================================
+    # # 2. ABLATION STUDIES (For Project Proposal)
+    # # ==========================================
     
-    # B. SGD Optimizer
-    # main(model_name='resnet50', learning_rate=0.01, optimizer_type='sgd')
+    # # Study A: ViT and 2 other without Augmentation (To show overfitting)
+    # # We use the optimized LR to be fair, but turn off augmentation.
+    # print("--- Starting ViT No-Augmentation Study ---")
+    # main(model_name='vit_base_patch16_224', learning_rate=0.000011, batch_size=16, use_aug=False)
+
+    # print("--- Starting densenet121 No-Augmentation Study ---")
+    # main(model_name='densenet121', learning_rate=0.000615, batch_size=32,use_aug=False)
+
+    # print("--- Starting ResNet No-Augmentation Study ---")
+    # main(model_name='resnet50', learning_rate=0.000260, batch_size=16,use_aug=False)
+
+    # # Study B: ResNet with SGD Optimizer (To compare vs AdamW)
+    # # SGD usually needs a higher LR (e.g. 0.01 or 0.001) to work well.
+    # print("--- Starting ResNet SGD Study ---")
+    # main(model_name='resnet50', learning_rate=0.001, batch_size=16, optimizer_type='sgd')
+    # print("--- Starting ViT SGD Study ---")
+    main(model_name='vit_base_patch16_224', learning_rate=0.001, batch_size=16, optimizer_type='sgd')
+
+# if __name__ == "__main__":
+#     # ==========================================
+#     # USER CONTROLS: UNCOMMENT THE RUN YOU NEED
+#     # ==========================================
+
+#     # --- RUN 1: BASELINE (Before Optuna) ---
+#     # main(model_name='resnet50', learning_rate=1e-4)
+#     # main(model_name='densenet121', learning_rate=1e-4)
+#     main(model_name='vit_base_patch16_224', learning_rate=1e-4)
+
+#     # --- RUN 2: OPTIMIZED (After Optuna results) ---
+#     # Update the learning_rate below based on what Optuna finds!
+#     # main(model_name='resnet50', learning_rate=1e-4) 
+
+#     # --- RUN 3: ABLATION STUDIES (To satisfy Project Proposal) ---
+    
+#     # A. ViT without Augmentation
+#     # main(model_name='vit_base_patch16_224', learning_rate=1e-4, use_aug=False)
+    
+#     # B. SGD Optimizer
+#     # main(model_name='resnet50', learning_rate=0.01, optimizer_type='sgd')
 
 
 
