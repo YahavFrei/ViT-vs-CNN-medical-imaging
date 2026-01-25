@@ -33,22 +33,25 @@ The repository is organized as follows:
 ├── optuna_search.py          # Hyperparameter tuning script
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
-
+```
 ##  Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YahavFrei/ViT-vs-CNN-medical-imaging.git](https://github.com/YahavFrei/ViT-vs-CNN-medical-imaging.git)
+   git clone https://github.com/YahavFrei/ViT-vs-CNN-medical-imaging.git
    cd ViT-vs-CNN-medical-imaging
+   ```
 
 2. **Create a virtual environment (Recommended):**
    ```bash
    conda create --name dl-project python=3.9 -y
    conda activate dl-project
+   ```
 
 3. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt  
+   pip install -r requirements.txt
+   ```
 
 ## Dataset
 We use the Chest X-Ray Images (Pneumonia) dataset from Kaggle.
