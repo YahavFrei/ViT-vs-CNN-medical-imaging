@@ -21,12 +21,12 @@ The repository is organized as follows:
 ├── archive/                  # Legacy scripts and previous experiments
 ├── logs/                     # Training logs, optuna studies, and run outputs
 ├── results/                  # Generated analysis and figures
-│   ├── heatmaps/24.01/       # Visualizations (GradCAM & Attention Maps)
+│   ├── heatmaps/24.01/       # Visualizations explainable heatmap
 │   └── plots/                # Loss curves and comparison charts
 ├── models/                   # (Created during training) Saves model checkpoints
-├── dataset.py                # Script to download and prepare the Kaggle dataset
+├── dataset.py                # Script to prepare the data for training
 ├── train.py                  # Main training script (Modular for all models)
-├── explain_model.py          # Generates Heatmaps (GradCAM) and Attention maps
+├── explain_model.py          # Generates Heatmaps (GradCAM)
 ├── generate_final_plots.py   # Generates comparison graphs from logs
 ├── visualize_results.py      # Script for plotting individual training curves
 ├── visualize_deep_metrics.py # Advanced metric analysis
@@ -81,15 +81,15 @@ Model performance breakdown by class (Normal vs. Pneumonia):
 
 | ResNet50 | ViT (Transformer) |
 |----------|-------------------|
-| ![ResNet CM](results/plots/24.01/confusion_matrix_resnet50.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224.png) |
+| ![ResNet CM](results/plots/24.01/confusion_matrix_densenet121_20260120_174515.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224_20260120_174841.png) |
 
 ## 🧠 Visualization & Explainability
 To understand model decisions, we visualized the regions of interest:
 
-* **ResNet50 (GradCAM):** Highlights local features (e.g., edges of the lungs).
-* **ViT (Attention):** Captures global dependencies and focuses on larger areas.
+* **ResNet50 :** Highlights local features (e.g., edges of the lungs).
+* **ViT :** Shows which patches contributed most to the classification.
 
-| ResNet50 GradCAM | ViT Attention Map |
+| ResNet50 | ViT |
 |------------------|-------------------|
 | ![ResNet Heatmap](results/heatmaps/24.01/heatmap_resnet50_sample_2.jpg) | ![ViT Heatmap](results/heatmaps/24.01/heatmap_vit_base_patch16_224_sample_2.jpg) |
 
