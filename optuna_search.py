@@ -101,7 +101,7 @@ def objective(trial):
     logger.info(f"Hyperparameters: LR={lr:.6f} | Batch_Size={batch_size}")
 
     # --- B. Setup Data ---
-    # Load data using the new split logic (80% Train / 20% Val) from dataset_v2.py.
+    # Load data using the new split logic (90% Train / 10% Val) from dataset_v2.py.
     # We enable augmentation to simulate real training conditions.
     train_loader, val_loader, _ = get_dataloaders(DATA_PATH, batch_size=batch_size, use_augmentation=True)
 
