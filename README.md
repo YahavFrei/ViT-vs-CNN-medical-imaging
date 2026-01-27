@@ -47,7 +47,7 @@ The repository is organized as follows:
 * **Size:** 5,856 Images (JPEG).
 * **Class Imbalance:** 74.3% Pneumonia / 25.7% Normal.
 * **Preprocessing:** Resize to 224x224, Normalization (ImageNet stats).
-* **Split Strategy:** We implemented a custom **80% / 10% / 10%** split (Train/Val/Test) to fix the original dataset's flawed validation set.
+* **Split Strategy:** We implemented a custom **90%  / 10%** split (Train/Val) to fix the original dataset's flawed validation set.
 
 ### 2. Model Architectures
 We compared three distinct paradigms initialized with **ImageNet** weights (Transfer Learning):
