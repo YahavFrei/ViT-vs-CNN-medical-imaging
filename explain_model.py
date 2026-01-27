@@ -25,7 +25,7 @@ CONFIG = {
 # 2. HELPER FUNCTIONS
 # ==========================================
 
-# --- NEW FUNCTION: Essential for ViT to work with GradCAM ---
+#  Essential for ViT to work with GradCAM 
 def reshape_transform_vit(tensor, height=14, width=14):
     """
     Reshapes the ViT output (Sequence of tokens) back into a 2D Spatial Grid (Image-like)
