@@ -16,7 +16,6 @@ from dataset import get_dataloaders  # Importing from the new 80/20 split datase
 # ==========================================
 
 # --- USER CONTROL PANEL ---
-# IMPORTANT: Change this variable for each run!
 # Options: 'resnet50', 'densenet121', 'vit_base_patch16_224'
 MODEL_TO_OPTIMIZE = 'densenet121' 
 
