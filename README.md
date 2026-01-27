@@ -4,97 +4,154 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![Optuna](https://img.shields.io/badge/Optuna-Enabled-blueviolet)
 
-## Introduction
-This project benchmarks the performance of **Vision Transformers (ViT)** against standard **Convolutional Neural Networks (CNNs)** (ResNet, DenseNet) for the task of **Pneumonia Detection** using Chest X-Ray images.
+## 📌 Overview & Motivation
 
-While CNNs have long been the gold standard for medical image analysis, Transformers have recently gained traction in computer vision. Our goal is to investigate:
-1. **Performance:** Accuracy comparison between ViT, ResNet50, and DenseNet121.
-2. **Data Efficiency:** How different architectures behave with limited medical data.
-3. **Robustness:** The impact of data augmentation on convergence.
-4. **Explainability:** Visualizing what the models "see" using GradCAM (for CNNs) and Attention Maps (for ViT).
+This project investigates a critical question in modern computer vision: **Can Vision Transformers (ViT) compete with established CNNs on limited-scale medical datasets?**
 
-##  Repository Structure
-The repository is organized as follows:
+While Convolutional Neural Networks (CNNs) have long been the gold standard for medical image analysis due to their inductive bias (locality and translation invariance), Transformers have recently revolutionized the field. However, ViTs are known to be "data-hungry".
 
-```text
+We benchmark three architectures—**ResNet50**, **DenseNet121**, and **ViT-Base**—on the task of **Pneumonia Detection** using Chest X-Ray images. Beyond simple accuracy, we explore:
+1.  **Training Stability:** How different architectures behave with limited data (~5k images).
+2.  **Hyperparameter Sensitivity:** Using **Optuna** to find the "Sweet Spot" for each model.
+3.  **Robustness:** Ablation studies on data augmentation and optimizers (SGD vs. AdamW).
+4.  **Explainability:** Visualizing model focus using **Grad-CAM** (CNNs) and **Attention Maps** (ViT) to detect "Shortcut Learning".
+
+---
+
+## 📂 Repository Structure
+
+The project is organized to support modular training, easy evaluation, and reproducibility:
+
+.
 ├── archive/                  # Legacy scripts and previous experiments
 ├── logs/                     # Training logs, optuna studies, and run outputs
 ├── results/                  # Generated analysis and figures
-│   ├── heatmaps/24.01/       # Visualizations explainable heatmap
-│   └── plots/                # Loss curves and comparison charts
-├── models/                   # (Created during training) Saves model checkpoints
-├── dataset.py                # Script to prepare the data for training
-├── train.py                  # Main training script (Modular for all models)
-├── explain_model.py          # Generates Heatmaps (GradCAM)
-├── generate_final_plots.py   # Generates comparison graphs from logs
-├── visualize_results.py      # Script for plotting individual training curves
-├── visualize_deep_metrics.py # Advanced metric analysis
-├── optuna_search.py          # Hyperparameter tuning script
+│   ├── heatmaps/24.01/       # Explainable AI visualizations (GradCAM/Attention)
+│   └── plots/                # Loss curves, Confusion Matrices, and Comparison charts
+├── models/                   # Saved model checkpoints (Best weights)
+├── dataset.py                # Custom Dataset class with 80/10/10 split strategy
+├── train.py                  # Main training engine (Modular for ResNet/DenseNet/ViT)
+├── explain_model.py          # Generates Heatmaps (GradCAM for CNN, Rollout for ViT)
+├── optuna_search.py          # Automated Hyperparameter Optimization script
+├── visualize_results.py      # Plots individual training curves
+├── visualize_deep_metrics.py # Generates confusion matrices and advanced metrics
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
-```
-##  Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/YahavFrei/ViT-vs-CNN-medical-imaging.git
-   cd ViT-vs-CNN-medical-imaging
-   ```
+---
 
-2. **Create a virtual environment (Recommended):**
-   ```bash
-   conda create --name dl-project python=3.9 -y
-   conda activate dl-project
-   ```
+## 🔬 Methodology
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 1. Dataset
+* **Source:** [Kaggle Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+* **Size:** 5,856 Images (JPEG).
+* **Class Imbalance:** 74.3% Pneumonia / 25.7% Normal.
+* **Preprocessing:** Resize to 224x224, Normalization (ImageNet stats).
+* **Split Strategy:** We implemented a custom **80% / 10% / 10%** split (Train/Val/Test) to fix the original dataset's flawed validation set.
 
-## Dataset
-We use the Chest X-Ray Images (Pneumonia) dataset from Kaggle.
-Classes: Normal vs. Pneumonia
-Source: [Kaggle Link](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+### 2. Model Architectures
+We compared three distinct paradigms initialized with **ImageNet** weights (Transfer Learning):
 
-## Usage & Training
-You can train different models by changing the arguments in train.py.
-Hyperparameter Tuning (Optuna): To find the best parameters automatically - optuna_search.py.
+| Architecture | Parameters | Inductive Bias | Key Characteristic |
+| :--- | :--- | :--- | :--- |
+| **ResNet50** | ~25M | Strong | Residual connections preventing vanishing gradients. |
+| **DenseNet121** | ~8M | Strong | Feature reuse via dense connections; parameter efficient. |
+| **ViT-Base** | ~86M | Weak | Global Self-Attention; treats images as sequence of patches. |
 
-## 📈 Results
+### 3. Optimization Strategy
+* **Loss Function:** `Weighted Cross-Entropy` (Weight ≈ 3.0 for "Normal" class) to effectively handle the class imbalance.
+* **Optimizer:** `AdamW` (Adaptive Moment Estimation with Decoupled Weight Decay).
+* **Hyperparameter Tuning:** We used **Optuna** to optimize Learning Rate and Batch Size (30 trials per model).
 
-### Performance Comparison
-The following chart compares the validation accuracy and training time of the top models:
+> **Key Discovery:** ViT required a significantly smaller Learning Rate (**~1e-5**) compared to CNNs (**~1e-4**) to prevent divergence, confirming its fragile loss landscape.
 
-![Comparison Plot](results/plots/final_comparison_top3.png)
+---
 
-### Training Dynamics
-We analyzed how different optimizers and augmentation techniques affect convergence:
+## 🚀 Installation & Usage
 
-| Impact of Augmentation | Optimizer Tradeoff |
-|------------------------|--------------------|
-| ![Augmentation](results/plots/impact_of_augmentation.png) | ![Optimizer](results/plots/optimizer_tradeoff.png) |
+### Prerequisites
+* Python 3.8+
+* CUDA-enabled GPU (Recommended)
 
-### Confusion Matrices
-Model performance breakdown by class (Normal vs. Pneumonia):
+### 1. Installation
+Clone the repository and install dependencies:
 
-| ResNet50 | ViT (Transformer) |
-|----------|-------------------|
-| ![ResNet CM](results/plots/24.01/confusion_matrix_densenet121_20260120_174515_best.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224_20260120_174841_best.png) |
+git clone https://github.com/YahavFrei/ViT-vs-CNN-medical-imaging.git
+cd ViT-vs-CNN-medical-imaging
+pip install -r requirements.txt
 
-## 🧠 Visualization & Explainability
-To understand model decisions, we visualized the regions of interest:
+### 2. Hyperparameter Search (Optuna)
+To reproduce the hyperparameter optimization process:
 
-* **ResNet50 :** Highlights local features (e.g., edges of the lungs).
-* **ViT :** Shows which patches contributed most to the classification.
+python optuna_search.py
 
-| ResNet50 | ViT |
-|------------------|-------------------|
-| ![ResNet Heatmap](results/heatmaps/24.01/heatmap_resnet50_sample_2.jpg) | ![ViT Heatmap](results/heatmaps/24.01/heatmap_vit_base_patch16_224_sample_2.jpg) |
+### 3. Training a Model
+You can train a specific model by modifying `train.py` or passing arguments (if configured):
+
+# Example: Train DenseNet121
+python train.py --model densenet121 --lr 6e-4 --batch_size 32 --epochs 10
+
+### 4. Visualizing Explanations
+Generate Grad-CAM or Attention Maps for trained models:
+
+python explain_model.py
+
+---
+
+## 📈 Key Results & Analysis
+
+### 🏆 Performance Benchmark (Test Set)
+**DenseNet121** emerged as the superior model for this task, offering the best balance of precision and recall.
+
+| Model | Accuracy | Recall (Sensitivity) | Precision | F1-Score |
+| :--- | :---: | :---: | :---: | :---: |
+| **DenseNet121** | **93.91%** | 98.97% | **91.90%** | **95.31%** |
+| ResNet50 | 91.83% | 96.67% | 90.84% | 93.66% |
+| ViT-Base | 88.94% | **99.49%** | 85.27% | 91.83% |
+
+> **Insight:** While ViT achieved near-perfect Recall (caught almost all sick patients), it suffered from **"Hypersensitivity"**, generating many False Alarms (Low Precision). This makes it less suitable as a standalone diagnostic tool compared to DenseNet.
+
+### 📉 Training Dynamics
+* **CNNs:** Showed smooth, monotonic convergence patterns.
+* **ViT:** Exhibited volatility and sharp spikes in the loss curve, even with optimized parameters. This empirically validates the theoretical claim that Transformers lack the stabilizing inductive bias of convolutions.
+
+### 🧪 Ablation Studies (Robustness Check)
+We performed rigorous testing to understand model behavior:
+
+1.  **No Augmentation:**
+    * ViT performance crashed by **~10%** without augmentation.
+    * CNNs remained relatively stable (drop of ~3-4%).
+    * *Conclusion:* ViT is highly dependent on data diversity/augmentation to generalize.
+
+2.  **Optimizer Sensitivity (SGD vs AdamW):**
+    * **ResNet50 + SGD:** Stable, but converged to a "safe" minimum (high recall, low precision).
+    * **ViT + SGD:** Failed to converge (Accuracy ~38%).
+    * *Conclusion:* ViT requires adaptive optimizers like **AdamW** to navigate its complex, non-convex loss landscape.
+
+---
+
+## 🧠 Explainability (Opening the Black Box)
+
+We visualized *where* the models were looking to diagnose Pneumonia using **Grad-CAM** (for CNNs) and **Attention Rollout** (for ViT).
+
+| Model | Observation |
+| :--- | :--- |
+| **DenseNet121** | **Focused Attention:** The CNN consistently focused strictly on lung opacities and boundaries. This correlates with radiological features. |
+| **ViT-Base** | **Scattered Attention:** The ViT showed scattered attention across the image. In some error cases, it focused on **medical wires/tubes**, exhibiting **"Shortcut Learning"**. |
+
+---
+
+## 📝 Conclusion
+Our benchmark confirms that for **limited medical datasets (~5k images)**:
+1.  **CNNs are still King:** DenseNet121 offers the most reliable, stable, and explainable performance.
+2.  **ViT is Data-Hungry:** Despite Transfer Learning, it struggles with stability and precision without massive datasets or stronger regularization.
+3.  **Clinical Implication:** DenseNet is recommended as a reliable **screening tool**. ViT shows promise but requires ensemble methods to mitigate false positives.
+
+---
 
 ## 👥 Credits
 * **Authors:** Yahav Freitag & Polina Pukh
-* **Paper Reference:** Dosovitskiy et al., "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" (ICLR 2021).
-* **Course:** Technion 046211 - Deep Learning.
-
+* **Institution:** Technion - Israel Institute of Technology
+* **Course:** 046211 - Deep Learning (Winter 2026)
