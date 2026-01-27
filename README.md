@@ -132,14 +132,25 @@ We performed rigorous testing to understand model behavior:
 
 ---
 
+### Confusion Matrices
+Model performance breakdown by class (Normal vs. Pneumonia):
+
+| ResNet50 | ViT (Transformer) |
+|----------|-------------------|
+| ![ResNet CM](results/plots/24.01/confusion_matrix_densenet121_20260120_174515_best.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224_20260120_174841_best.png) |
+
 ## 🧠 Explainability (Opening the Black Box)
 
-We visualized *where* the models were looking to diagnose Pneumonia using **Grad-CAM** (for CNNs) and **Attention Rollout** (for ViT).
+We visualized *where* the models were looking to diagnose Pneumonia using **Grad-CAM**.
 
 | Model | Observation |
 | :--- | :--- |
-| **DenseNet121** | **Focused Attention:** The CNN consistently focused strictly on lung opacities and boundaries. This correlates with radiological features. |
-| **ViT-Base** | **Scattered Attention:** The ViT showed scattered attention across the image. In some error cases, it focused on **medical wires/tubes**, exhibiting **"Shortcut Learning"**. |
+| **DenseNet121 & ResNet50** | **Focused Attention:** The CNN consistently focused strictly on lung opacities and boundaries. This correlates with radiological features. |
+| **ViT-Base** | **Scattered Attention:** The ViT showed scattered attention across the image. |
+
+| ResNet50 | ViT |
+|------------------|-------------------|
+| ![ResNet Heatmap](results/heatmaps/24.01/heatmap_resnet50_sample_2.jpg) | ![ViT Heatmap](results/heatmaps/24.01/heatmap_vit_base_patch16_224_sample_2.jpg) |
 
 ---
 
