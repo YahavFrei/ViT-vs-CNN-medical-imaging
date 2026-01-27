@@ -77,7 +77,9 @@ We compared three distinct paradigms initialized with **ImageNet** weights (Tran
 Clone the repository and install dependencies:
 
 git clone https://github.com/YahavFrei/ViT-vs-CNN-medical-imaging.git
+
 cd ViT-vs-CNN-medical-imaging
+
 pip install -r requirements.txt
 
 ### 2. Hyperparameter Search (Optuna)
@@ -125,7 +127,7 @@ We performed rigorous testing to understand model behavior:
 
 2.  **Optimizer Sensitivity (SGD vs AdamW):**
     * **ResNet50 + SGD:** Stable, but converged to a "safe" minimum (high recall, low precision).
-    * **ViT + SGD:** Failed to converge (Accuracy ~38%).
+    * **ViT + SGD:** Failed to converge (During the training got Accuracy of ~38%).
     * *Conclusion:* ViT requires adaptive optimizers like **AdamW** to navigate its complex, non-convex loss landscape.
 
 ---
