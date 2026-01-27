@@ -18,29 +18,27 @@ We benchmark three architectures—**ResNet50**, **DenseNet121**, and **ViT-Base
 3.  **Robustness:** Ablation studies on data augmentation and optimizers (SGD vs. AdamW).
 4.  **Explainability:** Visualizing model focus using **Grad-CAM** (CNNs) and **Attention Maps** (ViT) to detect "Shortcut Learning".
 
----
 
-## 📂 Repository Structure
+##  Repository Structure
+The repository is organized as follows:
 
-The project is organized to support modular training, easy evaluation, and reproducibility:
-
-.
+```text
 ├── archive/                  # Legacy scripts and previous experiments
 ├── logs/                     # Training logs, optuna studies, and run outputs
 ├── results/                  # Generated analysis and figures
-│   ├── heatmaps/24.01/       # Explainable AI visualizations (GradCAM/Attention)
-│   └── plots/                # Loss curves, Confusion Matrices, and Comparison charts
-├── models/                   # Saved model checkpoints (Best weights)
-├── dataset.py                # Custom Dataset class with 80/10/10 split strategy
-├── train.py                  # Main training engine (Modular for ResNet/DenseNet/ViT)
-├── explain_model.py          # Generates Heatmaps (GradCAM for CNN, Rollout for ViT)
-├── optuna_search.py          # Automated Hyperparameter Optimization script
-├── visualize_results.py      # Plots individual training curves
-├── visualize_deep_metrics.py # Generates confusion matrices and advanced metrics
+│   ├── heatmaps/24.01/       # Visualizations explainable heatmap
+│   └── plots/                # Loss curves and comparison charts
+├── models/                   # (Created during training) Saves model checkpoints
+├── dataset.py                # Script to prepare the data for training
+├── train.py                  # Main training script (Modular for all models)
+├── explain_model.py          # Generates Heatmaps (GradCAM)
+├── generate_final_plots.py   # Generates comparison graphs from logs
+├── visualize_results.py      # Script for plotting individual training curves
+├── visualize_deep_metrics.py # Advanced metric analysis
+├── optuna_search.py          # Hyperparameter tuning script
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
-
----
+```
 
 ## 🔬 Methodology
 
