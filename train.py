@@ -23,7 +23,6 @@ CONFIG = {
     'batch_size': 32,
     
     # Learning Rate: Default is 1e-4. 
-    # NOTE: You should update this manually based on Optuna results for each model!
     'learning_rate': 1e-4, 
     
     # Epochs: Number of times to iterate over the entire dataset.
