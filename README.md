@@ -166,9 +166,13 @@ We visualized *where* the models were looking to diagnose Pneumonia using **Grad
 
 ## 📝 Conclusion
 Our benchmark confirms that for **limited medical datasets (~5k images)**:
+
 1.  **CNNs are still King:** DenseNet121 offers the most reliable, stable, and explainable performance.
 2.  **ViT is Data-Hungry:** Despite Transfer Learning, it struggles with stability and precision without massive datasets or stronger regularization.
 3.  **Clinical Implication:** DenseNet is recommended as a reliable **screening tool**. ViT shows promise but requires ensemble methods to mitigate false positives.
+4.  **Optimization Fragility:** Our experiments proved that ViT has a highly non-convex loss landscape. Unlike ResNet (which remained stable with SGD), **ViT collapsed** without adaptive optimizers (AdamW) and required a much lower Learning Rate to converge.
+5.  **Vulnerability to Shortcut Learning:** Explainability maps revealed that the models can sometimes focused on **medical tubes/wires** rather than pathology. 
+6.  **Dependency on Augmentation:** Ablation studies showed that ViT is highly brittle; removing data augmentation caused a **~10% drop** in accuracy, whereas CNNs remained robust.
 
 ---
 
