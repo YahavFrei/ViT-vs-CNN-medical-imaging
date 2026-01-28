@@ -173,7 +173,7 @@ Our benchmark confirms that for **limited medical datasets (~5k images)**:
 4.  **Clinical Implication:** DenseNet is recommended as a reliable **screening tool**. ViT shows promise but requires ensemble methods to mitigate false positives.
 5.  **Optimization Fragility:** Our experiments proved that ViT has a highly non-convex loss landscape. Unlike ResNet (which remained stable with SGD), **ViT collapsed** without adaptive optimizers (AdamW) and required a much lower Learning Rate to converge.
 6.  **Vulnerability to Shortcut Learning:** Explainability maps revealed that the models can sometimes focused on **medical tubes/wires** rather than pathology. 
-7.  **Dependency on Augmentation:** Ablation studies showed that ViT is highly brittle; removing data augmentation caused a **~10% drop** in accuracy, whereas CNNs remained robust.
+7.  **Dependency on Augmentation:** Ablation studies showed that ViT is highly brittle; removing data augmentation caused a **~10% drop** in accuracy, whereas the **baseline CNN (Resnet)** remained robust.
 
 ---
 
