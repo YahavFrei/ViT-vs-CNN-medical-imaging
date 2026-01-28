@@ -147,7 +147,7 @@ Model performance breakdown by class (Normal vs. Pneumonia):
 
 | ResNet50 | ViT (Transformer) |
 |----------|-------------------|
-| ![ResNet CM](results/plots/24.01/confusion_matrix_densenet121_20260120_174515_best.png) | ![ViT CM](results/plots/24.01/confusion_matrix_vit_base_patch16_224_20260120_174841_best.png) |
+| ![ResNet CM](results/plots/confusion_matrix_densenet121_20260120_174515_best.png) | ![ViT CM](results/plots/confusion_matrix_vit_base_patch16_224_20260120_174841_best.png) |
 
 ## 🧠 Explainability (Opening the Black Box)
 
@@ -160,7 +160,7 @@ We visualized *where* the models were looking to diagnose Pneumonia using **Grad
 
 | ResNet50 | ViT |
 |------------------|-------------------|
-| ![ResNet Heatmap](results/heatmaps/24.01/heatmap_resnet50_sample_2.jpg) | ![ViT Heatmap](results/heatmaps/24.01/heatmap_vit_base_patch16_224_sample_2.jpg) |
+| ![ResNet Heatmap](results/heatmaps/heatmap_resnet50_sample_2.jpg) | ![ViT Heatmap](results/heatmaps/heatmap_vit_base_patch16_224_sample_2.jpg) |
 
 ---
 
