@@ -131,8 +131,8 @@ python explain_model.py
 We performed rigorous testing to understand model behavior:
 
 1.  **No Augmentation:**
-    * ViT performance crashed by **~10%** without augmentation.
-    * CNNs remained relatively stable (drop of ~3-4%).
+    * Dependency on Augmentation: ViT demonstrated high sensitivity to data diversity, suffering a **~10% performance drop** (Acc: ~79%) without augmentation.
+    * CNN Robustness: In contrast, the baseline CNN (ResNet50) remained **relatively robust** with a minor drop of ~4%, validating the theoretical advantage of inductive bias in low-data regimes.
     * *Conclusion:* ViT is highly dependent on data diversity/augmentation to generalize.
 
 2.  **Optimizer Sensitivity (SGD vs AdamW):**
