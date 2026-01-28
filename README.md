@@ -16,7 +16,7 @@ We benchmark three architectures—**ResNet50**, **DenseNet121**, and **ViT-Base
 1.  **Training Stability:** How different architectures behave with limited data (~5k images).
 2.  **Hyperparameter Sensitivity:** Using **Optuna** to find the "Sweet Spot" for each model.
 3.  **Robustness:** Ablation studies on data augmentation and optimizers (SGD vs. AdamW).
-4.  **Explainability:** Visualizing model focus using **Grad-CAM** (CNNs) and **Attention Maps** (ViT) to detect "Shortcut Learning".
+4.  **Explainability:** Visualizing model focus using **Grad-CAM** to detect where the models are "actualy looking at" and "Shortcut Learning".
 
 
 ##  Repository Structure
@@ -26,7 +26,7 @@ The repository is organized as follows:
 ├── archive/                  # Legacy scripts and previous experiments
 ├── logs/                     # Training logs, optuna studies, and run outputs
 ├── results/                  # Generated analysis and figures
-│   ├── heatmaps/24.01/       # Visualizations explainable heatmap
+│   ├── heatmaps/             # Visualizations explainable heatmap
 │   └── plots/                # Loss curves and comparison charts
 ├── models/                   # (Created during training) Saves model checkpoints
 ├── dataset.py                # Script to prepare the data for training
@@ -88,10 +88,20 @@ To reproduce the hyperparameter optimization process:
 python optuna_search.py
 
 ### 3. Training a Model
-You can train a specific model by modifying `train.py` or passing arguments (if configured):
+The `train.py` script is **pre-configured with ready-to-run execution blocks** for all our experiments. No manual argument parsing is needed.
 
-# Example: Train DenseNet121
-python train.py --model densenet121 --lr 6e-4 --batch_size 32 --epochs 10
+To run a specific experiment:
+1. Open `train.py`.
+2. Scroll to the bottom (`if __name__ == "__main__":` block).
+3. **Uncomment** the specific `main()` call you want to run (and comment out the others).
+4. Run the script:
+
+python train.py
+
+**Available Configurations inside `train.py`:**
+* **Final Optimized Models:** Run the best versions of DenseNet121, ResNet50, or ViT (with optimized LRs).
+* **Ablation Studies:** Ready-made lines to run "No Augmentation" or "SGD Optimizer" experiments.
+* **Baseline:** Default settings for initial comparison.
 
 ### 4. Visualizing Explanations
 Generate Grad-CAM or Attention Maps for trained models:
