@@ -169,10 +169,20 @@ Our benchmark confirms that for **limited medical datasets (~5k images)**:
 
 1.  **CNNs are still King:** DenseNet121 offers the most reliable, stable, and explainable performance.
 2.  **ViT is Data-Hungry:** Despite Transfer Learning, it struggles with stability and precision without massive datasets or stronger regularization.
-3.  **Clinical Implication:** DenseNet is recommended as a reliable **screening tool**. ViT shows promise but requires ensemble methods to mitigate false positives.
-4.  **Optimization Fragility:** Our experiments proved that ViT has a highly non-convex loss landscape. Unlike ResNet (which remained stable with SGD), **ViT collapsed** without adaptive optimizers (AdamW) and required a much lower Learning Rate to converge.
-5.  **Vulnerability to Shortcut Learning:** Explainability maps revealed that the models can sometimes focused on **medical tubes/wires** rather than pathology. 
-6.  **Dependency on Augmentation:** Ablation studies showed that ViT is highly brittle; removing data augmentation caused a **~10% drop** in accuracy, whereas CNNs remained robust.
+3.  **Efficiency Winner:** DenseNet121 achieved superior results with only **~8M parameters**, drastically outperforming ViT (**~86M params**). This proves that efficient architectural design (Feature Reuse) trumps raw model size for medical tasks.
+4.  **Clinical Implication:** DenseNet is recommended as a reliable **screening tool**. ViT shows promise but requires ensemble methods to mitigate false positives.
+5.  **Optimization Fragility:** Our experiments proved that ViT has a highly non-convex loss landscape. Unlike ResNet (which remained stable with SGD), **ViT collapsed** without adaptive optimizers (AdamW) and required a much lower Learning Rate to converge.
+6.  **Vulnerability to Shortcut Learning:** Explainability maps revealed that the models can sometimes focused on **medical tubes/wires** rather than pathology. 
+7.  **Dependency on Augmentation:** Ablation studies showed that ViT is highly brittle; removing data augmentation caused a **~10% drop** in accuracy, whereas CNNs remained robust.
+
+---
+
+## 🔮 Future Directions
+While DenseNet121 proved to be the most reliable standalone model, our analysis suggests several promising avenues for future research:
+
+1.  **Ensemble Learning:** Combining the high **Recall** of ViT (which catches almost all positive cases) with the high **Precision** of DenseNet could create a superior "Hybrid Expert" system.
+2.  **Hybrid Architectures:** Exploring models like **CoAtNet** that structurally combine Convolutional layers (for local features) and Self-Attention (for global context) to get the best of both worlds.
+3.  **Pre-training on Medical Data:** Instead of ImageNet (natural images), pre-training ViT on a massive medical dataset (like CheXpert) might mitigate its lack of inductive bias.
 
 ---
 
