@@ -145,7 +145,7 @@ We performed rigorous testing to understand model behavior:
 ### Confusion Matrices
 Model performance breakdown by class (Normal vs. Pneumonia):
 
-| ResNet50 | ViT (Transformer) |
+| Densenet121 | ViT (Transformer) |
 |----------|-------------------|
 | ![ResNet CM](results/plots/confusion_matrix_densenet121_20260120_174515_best.png) | ![ViT CM](results/plots/confusion_matrix_vit_base_patch16_224_20260120_174841_best.png) |
 
