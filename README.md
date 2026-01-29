@@ -189,4 +189,4 @@ While DenseNet121 proved to be the most reliable standalone model, our analysis 
 ## 👥 Credits
 * **Authors:** Yahav Freitag & Polina Pukh
 * **Institution:** Technion - Israel Institute of Technology
-* **Course:** 046211 - Deep Learning (Winter 2026)
+* **Course:** 046211 - Deep Learning (Winter 2025-26)
